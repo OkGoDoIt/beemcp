@@ -1,10 +1,10 @@
 import json
 from typing import List
 import requests
-from fact import Fact, fact_from_dict
-from conversation import Conversation, conversation_from_dict
-from todo import Todo, todo_from_dict
-from location import Location, combine_locations, location_from_dict
+from .fact import Fact, fact_from_dict
+from .conversation import Conversation, conversation_from_dict
+from .todo import Todo, todo_from_dict
+from .location import Location, combine_locations, location_from_dict
 
 class Bee:
     def __init__(self, api_key):

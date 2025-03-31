@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
-from bee import Bee
+from .bee import Bee
 import os
 from dotenv import load_dotenv
-from beemcp import resource_get_todo, create_todo, update_todo, delete_todo, mark_todo_completed, resource_list_incomplete_todos, resource_get_fact, resource_list_facts, resource_list_conversations, confirm_fact, get_fact, delete_fact, create_fact, resource_get_conversation, resource_get_fact, resource_list_facts, resource_list_conversations, list_all_locations, get_locations_time_range, resource_locations_today, resource_locations_week
+from .beemcp import resource_get_todo, create_todo, update_todo, delete_todo, mark_todo_completed, resource_list_incomplete_todos, resource_get_fact, resource_list_facts, resource_list_conversations, confirm_fact, get_fact, delete_fact, create_fact, resource_get_conversation, resource_get_fact, resource_list_facts, resource_list_conversations, list_all_locations, get_locations_time_range, resource_locations_today, resource_locations_week
 
 # Load environment variables from .env file
 load_dotenv()

@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from mcp.server.fastmcp import FastMCP
-from bee import Bee
+from .bee import Bee
 import os
 from dotenv import load_dotenv
 

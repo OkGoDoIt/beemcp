@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Any, Optional, List, TypeVar, Type, cast, Callable
-from utils import from_none, from_str, from_float, from_datetime, from_union, relative_time, relative_time_range, simple_time, simple_time_range, to_class, from_int, from_list, to_float
+from .utils import from_none, from_str, from_float, from_datetime, from_union, relative_time, relative_time_range, simple_time, simple_time_range, to_class, from_int, from_list, to_float
 
 @dataclass
 class Location:
