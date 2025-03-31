@@ -1,9 +1,9 @@
 # BeeMCP - A Bee MCP Server
 
-[![PyPI version](https://badge.fury.io/py/beemcp.svg)](https://badge.fury.io/py/beemcp?cache=1)
+[![PyPI version](https://badge.fury.io/py/beemcp.svg?cache=1)](https://badge.fury.io/py/beemcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Unofficial** Model Context Protocol (MCP) server for interacting with your [Bee wearable](https://bee.computer/) lifelogging data.
+**Unofficial** Model Context Protocol (MCP) server for interacting with your [Bee wearable](https://bee.computer/) lifelogging data.  More context [on my blog](https://rogerpincombe.com/beemcp).
 
 This server acts as a bridge, allowing Large Language Models (LLMs) like Claude or custom AI agents to access and interact with your personal data stored in Bee, including conversations, facts, to-dos, and location history.
 
