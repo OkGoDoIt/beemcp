@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beemcp"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server for Bee.computer lifelogging data (unofficial)"
+readme = "README.md"
+license = {text = "MIT License"} 
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.4.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0"
+]
+authors = [
+  { name="Roger Pincombe", email="roger@pincombe.com" },
+]
+maintainers = [
+  { name="Roger Pincombe", email="roger@pincombe.com" },
+]
+keywords = ["mcp", "model context protocol", "bee.computer", "bee ai", "bee", "lifelogging", "ai", "llm", "chatbot"] 
+classifiers = [ # Standard classifiers from https://pypi.org/classifiers/
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Operating System :: OS Independent",
+]
+
+# URLs for project links on PyPI
+[project.urls]
+Homepage = "https://github.com/okgodoit/beemcp"
+Repository = "https://github.com/okgodoit/beemcp"
+"Bug Tracker" = "https://github.com/okgodoit/beemcp/issues"
+
+[project.scripts]
+beemcp = "beemcp.beemcp:main"
+
+[tool.setuptools]
+packages = ["beemcp"]

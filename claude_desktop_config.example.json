@@ -1,0 +1,13 @@
+{
+	"mcpServers": {
+	  "beemcp": {
+		"command": "uvx",
+		"args": [
+		  "beemcp"
+		],
+		"env": {
+		  "BEE_API_TOKEN": "<YOUR API KEY HERE>"
+		}
+	  }
+	}
+  }
