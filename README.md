@@ -1,6 +1,6 @@
 # BeeMCP - A Bee MCP Server
 
-[![PyPI version](https://badge.fury.io/py/beemcp.svg)](https://badge.fury.io/py/beemcp)
+[![PyPI version](https://badge.fury.io/py/beemcp.svg)](https://badge.fury.io/py/beemcp?cache=1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Unofficial** Model Context Protocol (MCP) server for interacting with your [Bee wearable](https://bee.computer/) lifelogging data.
@@ -20,7 +20,7 @@ Bee.computer helps you capture moments from your life (conversations, places vis
 
 The AI, using `beemcp`, can securely fetch or modify this information from your Bee.computer account.
 
-![Example Claude Desktop Chat](./claude-chat-screenshot.png)
+![Example Claude Desktop Chat](https://github.com/OkGoDoIt/beemcp/raw/master/claude-chat-screenshot.png)
 
 ## Prerequisites
 
@@ -97,8 +97,7 @@ You need to tell your LLM client (like Claude.app or Zed) how to start and commu
 
 Add the following to your Claude settings (`settings.json`):
 
-<details>
-<summary>Using uvx (Recommended)</summary>
+>Using uvx (Recommended):
 
 ```json
 "mcpServers": {
@@ -109,7 +108,6 @@ Add the following to your Claude settings (`settings.json`):
   }
 }
 ```
-</details>
 
 <details>
 <summary>Using pip installation</summary>
@@ -126,7 +124,8 @@ Add the following to your Claude settings (`settings.json`):
 </details>
 
 If you go to the `Settings` window in Claude Desktop and open the `Developer` tab, you should see something like this:
-![Example Claude Desktop Configuration](./claude-desktop-configuration.png)
+
+![Example Claude Desktop Configuration](https://github.com/OkGoDoIt/beemcp/raw/master/claude-desktop-configuration.png)
 
 #### Configure for Zed
 
@@ -266,9 +265,13 @@ MCP Resources provide direct access to data, often used for context or caching b
 
 ## Example Interactions
 
-![Example Claude Desktop Chat](./claude-chat-screenshot.png)
+![Example Claude Desktop Chat](https://github.com/OkGoDoIt/beemcp/raw/master/claude-chat-screenshot.png)
 
-![Example extended chat](./extended-chat-screenshot.png)
+![Example extended chat](https://github.com/OkGoDoIt/beemcp/raw/master/extended-chat-screenshot.png)
+
+After which the Bee app on your phone will suggest the fact:
+
+![Example Bee app suggestion](https://github.com/OkGoDoIt/beemcp/raw/master/suggested_fact.png)
 
 ## Debugging
 
