@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/okgodoit-beemcp-badge.png)](https://mseep.ai/app/okgodoit-beemcp)
+
 # BeeMCP - A Bee MCP Server
 
 [![PyPI version](https://badge.fury.io/py/beemcp.svg?cache=1)](https://badge.fury.io/py/beemcp)
