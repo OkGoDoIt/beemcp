@@ -9,6 +9,13 @@ def from_str(x: Any) -> str:
     assert isinstance(x, str)
     return x
 
+def from_optional_str(x: Any) -> str:
+    """Handle strings that might be None, returning empty string for None values"""
+    if x is None:
+        return ""
+    assert isinstance(x, str)
+    return x
+
 
 def from_float(x: Any) -> float:
     assert isinstance(x, (float, int)) and not isinstance(x, bool)
@@ -82,9 +89,14 @@ def simple_time_range(start: datetime, end: datetime) -> str:
     else:
         return ""
 
-def relative_time_range(start: datetime, end: datetime, delta_only=False) -> str:
-    delta = end - start
+def relative_time_range(start: datetime, end: datetime = None, delta_only=False) -> str:
     start_text = relative_time(start)
+    
+    # Handle case where end is None (ongoing conversation)
+    if end is None:
+        return f"{start_text} (ongoing)"
+        
+    delta = end - start
     if delta.seconds > 60 * 60:
         delta_text = f"{delta.seconds // (60 * 60)} hours"
     elif delta.seconds > 60:
