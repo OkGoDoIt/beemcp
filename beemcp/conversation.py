@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Any, Optional, List, TypeVar, Type, cast, Callable
-from .utils import from_none, from_str, from_float, from_datetime, from_union, relative_time_range, to_class, from_int, from_list, to_float
+from .utils import from_none, from_str, from_optional_str, from_float, from_datetime, from_union, relative_time_range, to_class, from_int, from_list, to_float
 from .location import Location
 
 @dataclass
@@ -24,8 +24,8 @@ class Conversation:
         start_time = from_datetime(obj.get("start_time"))
         end_time = from_datetime(obj.get("end_time"))
         device_type = from_str(obj.get("device_type"))
-        summary = from_str(obj.get("summary"))
-        short_summary = from_str(obj.get("short_summary"))
+        summary = from_optional_str(obj.get("summary"))
+        short_summary = from_optional_str(obj.get("short_summary"))
         state = from_str(obj.get("state"))
         created_at = from_datetime(obj.get("created_at"))
         updated_at = from_datetime(obj.get("updated_at"))
